@@ -1,0 +1,20 @@
+Source Intro: 
+https://www.youtube.com/watch?v=D_mCjqUIwLY&list=PLWAmkUsnTP9ft9iXCzZnhAnTdhLD1FVfL&index=2 
+
+1. Setting JDK 
+	Search with keyword: Java SE develoment Kit 8u311 (In the Homepage oracle.com)
+2. Setting Intellij IDE
+	 Homepage: jetbrains.com
+3. Create New project gradle
+	Tick to Java, and Gradle > Change the Project Name > Finish. On the dev screen: wait to the gradle build.
+4. Setting the TestNG
+5. Setting the Selenium 
+6. setting the Webdrivermanager
+
+---
+1. To push code via Intellij Terminal.
+
+(First time:  In Terminal: Git add .)
+ -> Terminal: Git commit -m "your comment..."
+ _> Press:    Crtl + Shift + K -> Push completely!!!
+	
