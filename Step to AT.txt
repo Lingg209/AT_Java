@@ -16,5 +16,5 @@ https://www.youtube.com/watch?v=D_mCjqUIwLY&list=PLWAmkUsnTP9ft9iXCzZnhAnTdhLD1F
 
 (First time:  In Terminal: Git add .)
  -> Terminal: Git commit -m "your comment..."
- _> Press:    Crtl + Shift + K -> Push completely!!!
+ -> Press:    Crtl + Shift + K -> Push completely!!!
 	
