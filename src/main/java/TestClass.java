@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import static org.testng.Assert.assertEquals;
 
+
 public class TestClass {
     ChromeDriver chromeDriver;
     @BeforeMethod
@@ -14,12 +15,12 @@ public class TestClass {
         WebDriverManager.chromedriver().setup();
         chromeDriver = new ChromeDriver();
    }
+
     @Test
     public void Run(){
         //body Test scripts
         chromeDriver.get("https://www.swim.com/");
-        sleep(5000);
-
+        sleep(6000);
     }
 
    @AfterMethod
