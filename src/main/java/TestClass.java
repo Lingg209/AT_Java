@@ -2,6 +2,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -14,9 +15,7 @@ public class TestClass {
     ChromeDriver chromeDriver;
     @BeforeMethod
    public void Setup(){
-       System.out.println("Before Method");
-        // Setup data
-
+       System.out.println("Setup Method");
         WebDriverManager.chromedriver().setup();
         chromeDriver = new ChromeDriver();
    }
@@ -25,9 +24,37 @@ public class TestClass {
     public void Run(){
         //body Test scripts
         chromeDriver.get("https://auto.fresher.dev/lessons/lession7/index.html");
-        WebElement loginButton;
-        loginButton = chromeDriver.findElement(By.className("btn-success"));
+
+        WebElement button;
+        button = chromeDriver.findElement(By.className("btn-success"));
+
         //findElement: when condition is just only
+        Actions action = new Actions(chromeDriver);
+
+        //move to element
+        action.moveToElement(button);
+
+        //right click
+        action.contextClick(button).build().perform();
+
+        //left click
+        action.click(button).build().perform();
+
+
+        //double click
+        action.doubleClick(button).build().perform();
+
+        //Drag drop
+        action.dragAndDrop(button, button).build().perform();
+
+        //send key
+        WebElement textBox;
+        textBox = chromeDriver.findElement(By.id("txtInput1"));
+        textBox.clear();
+        action.sendKeys(textBox, "abc").build().perform();
+
+
+
         List<WebElement> buttons = chromeDriver.findElements(By.className("btn-success"));
         for(int i = 0; i < buttons.size(); i++)
         {
@@ -35,6 +62,8 @@ public class TestClass {
             sleep(3000);
         }
         //findElements: when we want to get many element has same condition filter
+
+
     }
 
 
