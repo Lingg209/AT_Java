@@ -1,5 +1,5 @@
 # AT_Java
-This project was learn by Youtube (https://www.youtube.com/@fdevofficial9322")
+This project learn automation via Youtube (https://www.youtube.com/@fdevofficial9322")
 
 Language: Java
 
